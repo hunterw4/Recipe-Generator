@@ -1,0 +1,182 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a; /* Dark background for contrast */
+            color: #f5f5f5; /* Light text for readability */
+        }
+
+        /* Carousel Styling */
+        .carousel-item img {
+            max-height: 550px;
+            object-fit: cover;
+            filter: brightness(80%); /* Slightly darker images */
+        }
+
+        /* Hero Section with Gradient Overlay */
+        .carousel-inner {
+            position: relative;
+        }
+
+        .carousel-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+            z-index: 2;
+        }
+
+        /* Recipe Container Styling */
+        .recipe-container {
+            max-width: 1200px;
+            margin: -150px auto 4rem;
+            padding: 2rem;
+            background-color: #2c2c2c; /* Darker card background */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .recipe-header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #f39c12; /* Gold accent for titles */
+            margin-bottom: 0.5rem;
+        }
+
+        .recipe-header p {
+            font-size: 1.2rem;
+            color: #bdc3c7; /* Lighter gray for subtitles */
+        }
+
+        /* Section Titles with Decorative Line */
+        .section-title {
+            font-size: 2rem;
+            color: #e67e22; /* Warm orange for section titles */
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 60px;
+            height: 5px;
+            background-color: #e67e22; /* Match the section title color */
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        /* Ingredient and Instruction Lists Styling */
+        .ingredients ul, .instructions ol {
+            padding-left: 1.5rem;
+        }
+
+        .ingredients li, .instructions li {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            padding: 5px 10px;
+            border-radius: 6px;
+        }
+
+        .ingredients li.checked {
+            background-color: #2ecc71; /* Green background for checked items */
+            color: #ffffff; /* White text for checked items */
+        }
+
+        .ingredients li:hover, .instructions li:hover {
+            background-color: #4c4c4c; /* Darker gray on hover */
+        }
+
+        .ingredients li::before, .instructions li::before {
+            content: '✔️';
+            margin-right: 10px;
+            color: #e67e22; /* Match the section title color */
+            visibility: hidden; /* Initially hide checkmark */
+        }
+
+        .ingredients li.checked::before, .instructions li.checked::before {
+            visibility: visible; /* Show checkmark when checked */
+        }
+
+        /* Nutritional Info - Modern Card Layout */
+        .nutrition-info {
+            background-color: #34495e; /* Darker card background */
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nutrition-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nutrition-info ul li {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .nutrition-info ul li strong {
+            color: #f39c12; /* Gold accent for nutrition items */
+        }
+
+        /* Suggestion and Significance Sections */
+        .suggestions, .significance {
+            background-color: #3c3c3c; /* Darker gray for suggestions and significance */
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .suggestions p, .significance p {
+            font-size: 1.2rem;
+            color: #ecf0f1; /* Light text for readability */
+            margin: 0;
+        }
+
+        /* Add a decorative border on the suggestion and significance sections */
+        .suggestions::before, .significance::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #f39c12, #e67e22);
+            border-radius: 12px 12px 0 0;
+        }
+
+        /* Footer Divider */
+        .divider {
+            height: 3px;
+            background-color: #f39c12; /* Gold accent for the divider */
+            width: 100px;
+            margin: 2rem auto;
+        }
+
+        /* Subtle Hover Effects */
+        .carousel-inner img {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-inner:hover img {
+            transform: scale(1.05);
+        }

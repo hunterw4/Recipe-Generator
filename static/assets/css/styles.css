@@ -10966,3 +10966,28 @@ video.bg-video {
     width: auto;
   }
 }
+
+.dropdown {
+      width: 250px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px 0;
+    }
+
+    /* Styling for the container */
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 20px;
+    }
+
+    /* Additional hover and focus effects */
+    .dropdown:hover, .dropdown:focus {
+      background-color: #e0e0e0;
+      border-color: #999;
+    }
