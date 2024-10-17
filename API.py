@@ -1,5 +1,6 @@
 import os
 from openai import OpenAI
+import json
 
 
 class GenerateRecipe():
@@ -45,5 +46,7 @@ class GenerateRecipe():
             ]
         )
 
-        recipe = print(completion.choices[0].message)
-        return recipe
+        recipe_content = completion.choices[0].message.content
+        recipe_data = json.loads(recipe_content)
+        return recipe_data
+

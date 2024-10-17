@@ -52,7 +52,7 @@ body {
         }
 
         .recipe-header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #bdc3c7; /* Lighter gray for subtitles */
         }
 
@@ -137,7 +137,7 @@ body {
         }
 
         /* Suggestion and Significance Sections */
-        .suggestions, .significance {
+        .suggestions, .significance .cooking-time .serving-size{
             background-color: #3c3c3c; /* Darker gray for suggestions and significance */
             padding: 2rem;
             border-radius: 12px;
@@ -147,7 +147,7 @@ body {
         }
 
         .suggestions p, .significance p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: #ecf0f1; /* Light text for readability */
             margin: 0;
         }

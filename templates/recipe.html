@@ -50,13 +50,13 @@
 
     <!-- Description Section -->
     <h2 class="section-title">Description</h2>
-    <p class="highlight-box" id="description">{{recipe_description}}</p>
+    <p class="highlight-box" id="description">{{description}}</p>
 
     <!-- Ingredients Section -->
     <h2 class="section-title">Ingredients</h2>
     <div class="ingredients">
         <ul id="ingredients-list">
-            {% for ingredient in the_recipe %}
+            {% for ingredient in ingredients %}
                 <li onclick="toggleCheck(this)">{{ingredient}}</li>
             {% endfor %}
         </ul>
@@ -67,7 +67,7 @@
     <div class="instructions">
         <ol id="instructions-list">
             <!-- For loop for cooking instructions -->
-            {% for step in steps %}
+            {% for step in preparation_steps %}
                 <li onclick="toggleCheck(this)">{{step}}</li>
             {% endfor %}
         </ol>
@@ -86,10 +86,20 @@
         </ul>
     </div>
 
+    <h2 class="section-title">Cook time</h2>
+    <div class="suggestions">
+        <p id="cooking-time"> {{cooking_time}} </p>
+    </div>
+
+    <h2 class="section-title">Serving Size</h2>
+    <div class="suggestions">
+        <p id="serving-size"> {{serving_size}} </p>
+    </div>
+
     <!-- Serving Suggestions Section -->
     <h2 class="section-title">Serving Suggestions</h2>
     <div class="suggestions">
-        <p id="serving-suggestions"> {{serving_suggestions}} </p>
+        <p id="serving-suggestions"> {{serving_suggestion}} </p>
     </div>
 
     <!-- Significance Section -->
